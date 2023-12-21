@@ -1,13 +1,10 @@
 spring:
-  h2:
-    console:
-      enabled: 'false'
   datasource:
-    username: sa
-    url: jdbc:h2:mem:testdb
-    driverClassName: org.h2.Driver
-    password: ''
+    url: jdbc:mariadb://127.0.0.1:3306/unit-testing?createDatabaseIfNotExist=true&&serverTimezone=UTC}
+    username: root
+    password:
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
     defer-datasource-initialization: 'true'
-    show-sql: 'false'
+    hibernate:
+      ddl-auto: update
