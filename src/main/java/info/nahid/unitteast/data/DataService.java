@@ -1,4 +1,4 @@
-package info.nahid.unitteast.service;
+package info.nahid.unitteast.data;
 
 public interface DataService {
 

@@ -1,6 +1,6 @@
 package info.nahid.unitteast.business;
 
-import info.nahid.unitteast.service.DataService;
+import info.nahid.unitteast.data.DataService;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

@@ -1,6 +1,8 @@
 package info.nahid.unitteast.business;
 
-import info.nahid.unitteast.service.DataService;
+import info.nahid.unitteast.data.DataService;
+
+import java.util.Arrays;
 
 public class BusinessImpl {
 
@@ -10,12 +12,9 @@ public class BusinessImpl {
         this.dataService = dataService;
     }
 
+    //functional Programming
     public int calculateSum(int[] data) {
-        int sum = 0;
-        for (int value : data) {
-            sum += value;
-        }
-        return sum;
+        return Arrays.stream(data).reduce(Integer::sum).orElse(0);
     }
 
     public int calculateSumUsingDataService() {
