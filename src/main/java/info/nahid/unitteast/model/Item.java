@@ -2,7 +2,6 @@ package info.nahid.unitteast.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.Transient;
 
 @Entity
 public class Item {
